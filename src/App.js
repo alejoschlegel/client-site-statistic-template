@@ -2,15 +2,15 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // components
 import Nav from './components/Nav/Nav';
+import Home from './components/Home/Home';
 
 export default function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <Nav/>
         <Routes>
-          <Route path="/" element={
-          <Nav/>
-          } />
+          <Route path="/" element={<Home/>} />
         </Routes>
       </BrowserRouter>
     </div>

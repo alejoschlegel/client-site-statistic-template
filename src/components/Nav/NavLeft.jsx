@@ -4,12 +4,12 @@ export default function NavLeft() {
         <div className="navleft_menu">
           <span className="material-icons-sharp" id="menu">menu</span>
           <div>
-          <span className="material-icons-sharp">home</span>
-          <span className="material-icons-sharp">apps</span>
-          <span className="material-icons-sharp">comment</span>
-          <span className="material-icons-sharp">today</span>
-          <span className="material-icons-sharp">person</span>
-          <span className="material-icons-sharp">people</span>
+            <span className="material-icons-sharp">home</span>
+            <span className="material-icons-sharp">apps</span>
+            <span className="material-icons-sharp">comment</span>
+            <span className="material-icons-sharp">today</span>
+            <span className="material-icons-sharp">person</span>
+            <span className="material-icons-sharp">people</span>
           </div>
         </div>
         <div className="navleft_options">

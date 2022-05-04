@@ -3,9 +3,10 @@
     --color-white: #f7f7f7;
     --color-gray: #878a8f;
 
+    --color-primary-darkest: #222534;
     --color-primary-dark: #31394c;
-    --color-primary-light: #7a808f;
-    --color-primary-lightest: #cecece;
+    --color-primary-light: #6e727f;
+    --color-primary-lightest: #ebf0f9;
   
     --color-red: #ff6666;
     --color-green: #78f2c5;

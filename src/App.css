@@ -27,6 +27,7 @@ span {
 .app {
     background-color: var(--color-white);
     color: var(--color-black);
+    max-width: 100vw;
 }
 .text_muted {
     color: var(--color-primary-light);
