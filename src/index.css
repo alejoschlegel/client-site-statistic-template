@@ -1,0 +1,24 @@
+:root {
+    --color-black: #0f141e;
+    --color-white: #f7f7f7;
+    --color-gray: #878a8f;
+
+    --color-primary-dark: #31394c;
+    --color-primary-light: #7a808f;
+    --color-primary-lightest: #cecece;
+  
+    --color-red: #ff6666;
+    --color-green: #78f2c5;
+    --color-violet: #9999ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}

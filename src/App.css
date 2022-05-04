@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Sharp");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 0.875rem;
+}
+p {
+    font-size: 0.85rem;
+}
+span {
+    font-size: 0.85rem;
+}
+.app {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+.text_muted {
+    color: var(--color-primary-light);
+}
