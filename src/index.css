@@ -5,21 +5,10 @@
 
     --color-primary-darkest: #222534;
     --color-primary-dark: #31394c;
-    --color-primary-light: #6e727f;
-    --color-primary-lightest: #ebf0f9;
+    --color-primary-light: #676b78;
+    --color-primary-lightest: #dedede;
   
     --color-red: #ff6666;
     --color-green: #78f2c5;
     --color-violet: #9999ff;
-}
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    appearance: none;
-    border: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }

@@ -22,13 +22,37 @@ p {
     font-size: 0.85rem;
 }
 span {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
 }
-.app {
-    background-color: var(--color-white);
-    color: var(--color-black);
-    max-width: 100vw;
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-primary-light);
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 1rem;
+    user-select: none;
+    background: #1e1e1e;
 }
 .text_muted {
     color: var(--color-primary-light);
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 1rem;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-light);
+    border-radius: 1rem;
+    border: var(--color-primary-darkest) solid 0.35rem;
 }

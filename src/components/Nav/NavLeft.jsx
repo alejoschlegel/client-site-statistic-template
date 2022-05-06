@@ -13,8 +13,8 @@ export default function NavLeft() {
           </div>
         </div>
         <div className="navleft_options">
-            <span id="menu">Web interface</span>
-          <div>
+            <span className="navleft_options_webinterface">Web interface</span>
+          <div className="navleft_options_dashboards">
             <span className="text_muted">Dashboards</span>
             <span>Messages</span>
             <span>Notifications</span>
@@ -24,7 +24,7 @@ export default function NavLeft() {
             <span>Users</span>
             <span>Top Charts</span>
           </div>
-          <div>
+          <div className="navleft_options_contact">
           <span className="text_muted">Contacts</span>
             <span>user</span>
             <span>user</span>
@@ -35,7 +35,7 @@ export default function NavLeft() {
             <span>user</span>
             <span>user</span>
           </div>
-          <div>
+          <div className="navleft_options_bottom">
             <span className="material-icons-sharp">people</span>
             <span className="material-icons-sharp">comment</span>
             <span className="material-icons-sharp">email</span>

@@ -1,4 +1,3 @@
-import "./Nav.css";
 
 export default function NavTop() {
   return (
