@@ -58,6 +58,15 @@
     padding-left: 1rem;
     background: transparent;
 }
+.user img {
+    height: 2.5rem;
+    border-radius: 100%;
+}
+.user span {
+    color: var(--color-primary-lightest);
+    display: flex;
+    align-items: center;
+}
 /* ---------------------------------------------- home top ----------------------------------------------*/
 .home_top {
     width: 100%;

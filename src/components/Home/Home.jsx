@@ -1,7 +1,35 @@
 import css from "./Home.module.css";
 import Chart from "../Chart/Chart";
+import { useEffect, useState, useCallback} from "react";
+import axios from "axios";
 
 export default function Home() {
+    const [user, setUser] = useState({});
+    let [timer , setTimer] = useState(10);
+    const getRandomUser = () => {
+        axios.get("http://localhost:3001/random-user").then((res) => {
+            setUser(res.data);
+        });
+    };
+    useEffect(() => {
+        if (user.name === undefined) getRandomUser();
+        
+        const interval = setInterval(() => {
+            setTimer(timer - 1);
+        }
+        , 1000);
+        if (timer === 0) {
+            getRandomUser();
+            setTimer(10);
+        }
+        return () => clearInterval(interval);
+    }
+    , [timer]);
+
+    const handleClick = () => {
+        getRandomUser();
+        setTimer(10);
+    }
   return (
     <div className={css.home}>
         <div className={css.container}>
@@ -19,7 +47,10 @@ export default function Home() {
                 </div>
                 <div>
                     <span className="material-icons-sharp">notifications</span>
-                    <div>user</div>
+                    <div className={css.user}>
+                        <img src={user.picture} onClick={() => handleClick()} />
+                        <span>{user.name}<span className="material-icons-sharp">expand_more</span></span>
+                    </div>
                 </div>
             </div>
         </div>
