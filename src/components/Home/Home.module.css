@@ -164,7 +164,7 @@
 .chart {
     width: 100%;
     min-width: 1000px;
-    height: 15rem;
+    height: 12rem;
     padding: 0 1rem;
 
 }
@@ -355,3 +355,18 @@
     border-top: var(--color-primary-light) solid 0.1rem;
 } */
 /* ---------------------------------------------- media queries ----------------------------------------------*/
+@media (min-width: 1240px) {
+/* ---------------------------------------------- home top ----------------------------------------------*/
+.square {
+    width: 100%;
+}
+.row {
+    width: 8.65vw;
+    max-width: 100%;
+}
+}
+@media (max-width: 750px) {
+    .home {
+        padding-left: 3rem;
+    }
+}

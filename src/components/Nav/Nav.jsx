@@ -1,6 +1,4 @@
 import css from "./Nav.module.css";
-import NavLeft from "./NavLeft";
-import NavTop from "./NavTop";
 
 export default function Nav() {
   return (
