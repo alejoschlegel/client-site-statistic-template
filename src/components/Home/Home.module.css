@@ -166,15 +166,97 @@
     min-width: 1000px;
     height: 15rem;
     padding: 0 1rem;
+
 }
-.chart div{
+.chart_container {
+    background: var(--color-primary-dark);
     width: 100%;
     height: 100%;
-    border: var(--color-primary-light) dotted 0.2rem;
+    position: relative;
+}
+.chart_colors {
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
 }
+.chart_title {
+    width: 100%;
+    color: var(--color-primary-lightest);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    border-bottom: var(--color-primary-light) solid 0.1rem;
+}
+.point {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+}
+.chart_columns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+.chart_column {
+    z-index: 1;
+    margin-bottom: 7.2rem;
+    width: 0.9rem;
+    background: var(--color-violet);
+}
+.chart_columns :nth-child(even) {
+    background: var(--color-pink);
+}
+
+.chart_delimeter {
+    z-index: 1;
+    height: 1rem;
+    width: 97%;
+    margin-left: 1rem;
+    float: left;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+}
+.chart_delimeter span {
+    width: 2rem;
+    display: flex;
+}
+.chart_border {
+    border-bottom: var(--color-primary-light) solid 0.1rem;
+    width: 95%;
+}
+#first {
+    margin-top: 1.3rem;
+}
+#second {
+    margin-top: 2.8rem;
+}
+#third {
+    margin-top: 4.3rem;
+}
+#fourth {
+    margin-top: 5.8rem;
+}
+
+.chart_bottom {
+    z-index: 1;
+    height: 1rem;
+    width: 97%;
+    margin-left: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    bottom: 2.5rem;
+    padding: 0 3.4rem;
+}
+
 /* ---------------------------------------------- home bottom ----------------------------------------------*/
 .home_bottom {
     padding: 0 1rem;
@@ -220,7 +302,19 @@
     max-width: 105px;
     height: 2rem;
     padding-left: 0.5rem;
-} 
+    padding-right: 0.5rem;
+}
+.row_container {
+    background-color: var(--color-primary-light);
+    height: 0.2rem;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+.row_bar {
+    background-color: var(--color-pink);
+    height: 100%;
+    border-radius: 0.25rem;
+}
 /*
 .home .statistics {
     display: flex;

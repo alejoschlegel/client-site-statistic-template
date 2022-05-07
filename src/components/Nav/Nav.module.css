@@ -84,6 +84,15 @@
     gap: 0.5rem;
     width: 12rem;
 }
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.contact img {
+    height: 1.75rem;
+    border-radius: 100%;
+}
 .navleft_options_contact span{
     color: var(--color-primary-lightest);
 }

@@ -32,14 +32,38 @@ export default function Nav() {
         </div>
         <div className={css.navleft_options_contact}>
           <span>Contacts</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
-          <span>user</span>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/29.jpg"/>
+            <span>Adelaide da Cruz</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/men/55.jpg"/>
+            <span>Joshua Chen</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/5.jpg"/>
+            <span>David Roux</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/85.jpg"/>
+            <span>Earl Elliott</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/63.jpg"/>
+            <span>Eileen Gardner</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/31.jpg"/>
+            <span>Esma Pekkan</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/20.jpg"/>
+            <span>Caleb Lee</span>
+          </div>
+          <div className={css.contact}>
+            <img src="https://randomuser.me/api/portraits/women/58.jpg"/>
+            <span>Vilma Wainio</span>
+          </div>
         </div>
         <div className={css.navleft_options_bottom}>
           <span className="material-icons-sharp">people</span>

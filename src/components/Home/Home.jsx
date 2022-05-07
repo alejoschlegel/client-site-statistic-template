@@ -114,7 +114,104 @@ export default function Home() {
         </div>        
         {/* ---------------------------------------------- home statistics ----------------------------------------------*/}
         <div className={css.chart}>
-            <div>chart delimiter</div>
+            <div className={css.chart_container}>
+                <div className={css.chart_title}>Double Click Campaing Stats</div>
+                <div className={css.chart_colors}>
+                    <div className={css.point} style={{background: "var(--color-pink)"}}/>
+                    <span>Click Rate</span>
+                    <div className={css.point} style={{background: "var(--color-violet)"}}/>
+                    <span>Impressions</span>
+                </div>
+
+                <div className={css.chart_delimeter} id={css.first}>
+                    <span>750%</span>
+                    <div className={css.chart_border}></div>
+                    <span>1000</span>
+                </div>
+
+                <div className={css.chart_delimeter} id={css.second}>
+                    <span>500%</span>
+                    <div className={css.chart_border}></div>
+                    <span>500</span>
+                </div>
+
+                <div className={css.chart_delimeter} id={css.third}>
+                    <span>250%</span>
+                    <div className={css.chart_border}></div>
+                    <span>200</span>
+                </div>
+
+                <div className={css.chart_delimeter} id={css.fourth}>
+                    <span>5%</span>
+                    <div className={css.chart_border}></div>
+                    <span>0</span>
+                </div>
+
+                <div className={css.chart_bottom}>
+                    <div>22.04</div>
+                    <div>25.04</div>
+                    <div>27.04</div>
+                    <div>29.04</div>
+                    <div>31.04</div>
+                    <div>02.05</div>
+                    <div>04.05</div>
+                    <div>04.05</div>
+                    <div>10.05</div>
+                    <div>12.05</div>
+                    <div>14.05</div>
+                    <div>16.05</div>
+                    <div>18.05</div>
+                    <div>20.05</div>
+                    <div>24.05</div>
+                    <div>24.05</div>
+                    <div>24.05</div>
+                    <div>26.05</div>
+                    <div>28.05</div>
+                </div>
+                
+                {/* chart */}
+                    <div className={css.chart_columns}>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "25%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "10%"}}/>
+                        <div className={css.chart_column} style={{height: "8%"}}/>
+                        <div className={css.chart_column} style={{height: "23%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "27%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "27%"}}/>
+                        <div className={css.chart_column} style={{height: "33%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "10%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "10%"}}/>
+                        <div className={css.chart_column} style={{height: "21%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "10%"}}/>
+                        <div className={css.chart_column} style={{height: "30%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "20%"}}/>
+                        <div className={css.chart_column} style={{height: "15%"}}/>
+                        <div className={css.chart_column} style={{height: "23%"}}/>
+                </div>
+            </div>
         </div>
         {/* <Chart /> */}
         {/* ---------------------------------------------- home bottom ----------------------------------------------*/}
@@ -162,11 +259,31 @@ export default function Home() {
                 </div>
                 <div className={css.column}>
                     <span className={css.header}>...</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "80%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "50%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "20%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "20%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "55%"}}></div>
+                        </div>
+                    </span>
                 </div>
             </div>
             <div className={css.table_short}>
@@ -188,11 +305,27 @@ export default function Home() {
                 </div>
                 <div className={css.column}>
                     <span className={css.header}>...</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
+                    <span className={css.row}></span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "100%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "60%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "20%"}}></div>
+                        </div>
+                    </span>
+                    <span className={css.row}>
+                        <div className={css.row_container}>
+                            <div className={css.row_bar} style={{width: "10%"}}></div>
+                        </div>
+                    </span>
                 </div>
             </div>
         </div>
