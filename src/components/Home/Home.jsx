@@ -1,9 +1,11 @@
 import css from "./Home.module.css";
-import Chart from "../Chart/Chart";
 import { useEffect, useState, useCallback} from "react";
 import axios from "axios";
 
-export default function Home() {
+export default function Home({
+    darkmode,
+    setDarkmode,
+}) {
     const [user, setUser] = useState({});
     let [timer , setTimer] = useState(10);
     const getRandomUser = () => {
@@ -46,6 +48,12 @@ export default function Home() {
                     <input type="text" placeholder="Search messages"/>
                 </div>
                 <div>
+                    <button onClick={() => setDarkmode(!darkmode)} className= {darkmode ? "modedark" : "modelight"}>
+                        {
+                            darkmode ? <span className="material-icons-sharp">dark_mode</span> : 
+                            <span className="material-icons-sharp">light_mode</span>
+                        }
+                    </button>
                     <span className="material-icons-sharp">notifications</span>
                     <div className={css.user}>
                         <img src={user.picture} onClick={() => handleClick()} />
@@ -123,6 +131,7 @@ export default function Home() {
                     <span>Impressions</span>
                 </div>
 
+                <div className={css.chart_delimeter_container}>
                 <div className={css.chart_delimeter} id={css.first}>
                     <span>750%</span>
                     <div className={css.chart_border}></div>
@@ -146,7 +155,7 @@ export default function Home() {
                     <div className={css.chart_border}></div>
                     <span>0</span>
                 </div>
-
+                </div>
                 <div className={css.chart_bottom}>
                     <div>22.04</div>
                     <div>25.04</div>
@@ -330,86 +339,6 @@ export default function Home() {
             </div>
         </div>
         </div>
-        {/* 
-        <Chart/>
-        <div className="home_bottom">
-            <div className="table_large">
-                <div className={css.column}>
-                    <span className={css.header}>Channel</span>
-                    <span className={css.row}>Direct</span>
-                    <span className={css.row}>Email</span>
-                    <span className={css.row}>Organic Search</span>
-                    <span className={css.row}>Paid Search</span>
-                    <span className={css.row}>Referral</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>Sessions</span>
-                    <span className={css.row}>3397</span>
-                    <span className={css.row}>808</span>
-                    <span className={css.row}>430</span>
-                    <span className={css.row}>194</span>
-                    <span className={css.row}>108</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>% of Traffic</span>
-                    <span className={css.row}>65.9%</span>
-                    <span className={css.row}>15,7%</span>
-                    <span className={css.row}>8,3%</span>
-                    <span className={css.row}>2,1%</span>
-                    <span className={css.row}>1,0%</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>Goal Rate</span>
-                    <span className={css.row}>3.5%</span>
-                    <span className={css.row}>1,9%</span>
-                    <span className={css.row}>0,2%</span>
-                    <span className={css.row}>0.2%</span>
-                    <span className={css.row}>2,4%</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>Goals</span>
-                    <span className={css.row}>118</span>
-                    <span className={css.row}>15</span>
-                    <span className={css.row}>1</span>
-                    <span className={css.row}>5</span>
-                    <span className={css.row}>7</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>...</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                </div>
-            </div>
-            <div className={css.table_short}>
-                <div className={css.column}>
-                    <span className={css.header}>Top Cities</span>
-                    <span className={css.row}>City</span>
-                    <span className={css.row}>Ottawa</span>
-                    <span className={css.row}>Toronto</span>
-                    <span className={css.row}>New York</span>
-                    <span className={css.row}>Calgary</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>-</span>
-                    <span className={css.row}>Customers</span>
-                    <span className={css.row}>106</span>
-                    <span className={css.row}>55</span>
-                    <span className={css.row}>54</span>
-                    <span className={css.row}>7</span>
-                </div>
-                <div className={css.column}>
-                    <span className={css.header}>...</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                    <span className={css.row}>----------------------------</span>
-                </div>
-            </div>
-        </div> */}
     </div>
   );
 }

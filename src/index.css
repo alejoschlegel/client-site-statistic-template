@@ -12,4 +12,30 @@
     --color-green: #78f2c5;
     --color-violet: #45536d;
     --color-pink: #9b57b4;
+
+    --font-dark: var(--color-primary-light);
+    --font-light: var(--color-primary-lightest);
+    --background-darkest: var(--color-primary-dark);
+    --background-dark: var(--color-primary-darkest);
+    --background-light: var(--color-primary-dark);
+    --background-lightest: var(--color-primary-light);
+    --box-shadow: 0px 0px 0px 1rem var(--color-primary-dark);
+    --border-dark: var(--color-primary-dark);
+    --border-light: var(--color-primary-light);
+    --scroll-bar: var(--color-primary-dark);
+    --hoover-color: var(--color-primary-lightest);
+}
+.light_mode {
+    --font-dark: #b4b4b4;
+    --font-light: #6f7179;
+    --background-darkest: var(--color-primary-darkest);
+    --background-dark: var(--color-white);
+    --background-light: var(--color-white);
+    --background-lightest: var(--color-white);
+    --box-shadow: #5a5d6818;
+    --border-dark: var(--color-primary-lightest);
+    --border-light: var(--color-primary-lightest);
+    --scroll-bar: var(--color-primary-light);
+    --hoover-color: var(--color-white);
+    --color-violet: #d5d9e0;
 }

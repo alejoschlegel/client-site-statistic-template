@@ -52,7 +52,17 @@ body {
     height: 1rem;
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--color-primary-light);
+    background: var(--scroll-bar);
     border-radius: 1rem;
-    border: var(--color-primary-darkest) solid 0.35rem;
+    border: var(--background-dark) solid 0.35rem;
+}
+.modedark {
+    background: transparent;
+    color: var(--font-light);
+    cursor: pointer;
+}
+.modelight {
+    background: transparent;
+    color: var(--font-dark);
+    cursor: pointer;
 }
